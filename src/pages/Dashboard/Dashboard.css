@@ -1,0 +1,71 @@
+.left{
+  width: 25%;
+}
+.right{
+  width: 75%;
+  /* overflow: hidden; */
+}
+.sideMenu{
+  width: fit-content;
+  position: absolute;
+  top: 70px;
+  display: none;
+}
+.sideItem:hover{
+  background: #c2c1c1;
+}
+.orderBox{
+  background: #82ccdd4b;
+}
+.status{
+  background: #f8c291;
+  color: #e55039;
+}
+::-webkit-file-upload-button{
+  background-color: #008cff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.allOrdersProducts table thead tr td{
+  padding: 10px 0;
+  text-align: center;
+}
+.allOrdersProducts{
+  overflow-x: scroll !important;
+}
+.allOrdersProducts table{
+  min-width: 700px;
+}
+.allOrdersProducts table thead tr{
+  background-color: crimson;
+  color: #fff;
+}
+.allOrdersProducts table tr{
+  border-top: 2px solid #fff;
+}
+.allOrdersProducts table tr td{
+  padding:8px;
+  border: 2px solid #fff;
+  font-size: 15px;
+}
+
+@media only screen and (max-width:900px) {
+  .left{
+    position: absolute;
+    width: 300px;
+  }
+  .hide{
+    left: -100%;
+    transition: 1s;
+  }
+  .right{
+    width: 100%;
+  }
+  .sideMenu{
+    display: block;
+  }
+  
+}
